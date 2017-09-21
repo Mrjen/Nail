@@ -1,0 +1,11 @@
+<!--pages/Detile/Detile.wxml-->
+<image class="product_img" src="{{product.img}}"></image>
+<text class="title">{{product.title}}</text>
+<view class="price_box border_bottom">
+    <view class="price"><text>￥</text><text>{{product.price}}</text><text>单价买￥{{product.oldprice}}</text></view>
+    <view class="group"><text>{{product.groupNum}}人团</text><text>已售{{product.salse}}</text></view>
+</view>
+<view class="tip_box">该商品所有用户均可开团，仅限本店用户参团哦，开团后快邀请好友参团吧！</view>
+<view class="rule_box">支付开团并邀请{{product.groupNum}}人参团，人数不足自动退款</view>
+<view class="detail_nav border_bottom">商品详情</view>
+<view class="detail"></view>

@@ -1,0 +1,45 @@
+{
+  "pages":[
+    "pages/NailTeachList/NailTeachList",
+    "pages/ReserveNailTime/ReserveNailTime",
+    "pages/SubmitOrder/SubmitOrder",
+    "pages/ReserveNail/ReserveNail",
+    "pages/BindMobile/BindMobile",
+    "pages/Detile/Detile",
+    "pages/Mine/Mine",
+    "pages/selectStyle/selectStyle",
+    "pages/index/index",
+    "pages/fightGroup/fightGroup",
+    "pages/myOrder/myOrder",
+    "pages/goods/goods"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "美甲美妆",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "pages/img/home-icon.png",
+      "selectedIconPath": "pages/img/home-icon-active.png"
+    },{
+      "pagePath": "pages/goods/goods",
+      "text": "商品",
+      "iconPath": "pages/img/home-icon-sort.png",
+      "selectedIconPath": "pages/img/home-icon-sort-active.png"
+    },{
+      "pagePath": "pages/selectStyle/selectStyle",
+      "text": "选款",
+      "iconPath": "pages/img/home-icon-selecttype.png",
+      "selectedIconPath": "pages/img/home-icon-selecttype-active.png"
+    },{
+      "pagePath": "pages/Mine/Mine",
+      "text": "我的",
+      "iconPath": "pages/img/home-icon-mine.png",
+      "selectedIconPath": "pages/img/home-icon-mine-active.png"
+    }]
+  }
+}

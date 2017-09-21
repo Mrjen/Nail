@@ -1,0 +1,33 @@
+<!--pages/SubmitOrder/SubmitOrder.wxml-->
+<view class="product_info">
+    <image src="{{product.img}}"></image>
+    <view>{{product.title}}</view>
+</view>
+<view class="num_nav">
+    <view>数量：</view>
+    <view class="num_box">
+       <view class="num_btn" bindtap="cutNum">-</view>
+       <view>{{product.productNum}}</view>
+       <view class="num_btn" bindtap="addNum">+</view>
+    </view>
+</view>
+
+<view class="num_nav">
+    <view>数量：</view>
+    <view class="num_box num_box2">
+        ￥{{product.price}}
+    </view>
+</view>
+
+<view class="mobile_nav">
+    您绑定手机号
+</view>
+
+<block>
+    <navigator class="nophone" url="">未绑定手机号</navigator>
+    <view class="hasphone">
+        <view>{{userphone}}</view>
+        <navigator class="editphone" url="">修改</navigator >
+    </view>
+</block>
+

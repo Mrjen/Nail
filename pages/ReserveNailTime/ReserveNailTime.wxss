@@ -1,0 +1,71 @@
+/* pages/ReserveNailTime/ReserveNailTime.wxss */ 
+.navbar{ 
+    display: flex; 
+    position: relative; 
+    padding:5rpx 20rpx; 
+} 
+ 
+.nav_item{ 
+    flex:1; 
+    text-align: center; 
+    line-height: 40rpx; 
+    font-size: 29rpx; 
+} 
+ 
+.item_border{ 
+    border-bottom: 2px solid #ff3333; 
+} 
+ 
+.nav_item text{ 
+   display: block; 
+} 
+ 
+.time_box{ 
+    display: flex; 
+    flex-wrap: wrap; 
+    padding:24rpx; 
+} 
+ 
+.time_box .time_item:nth-of-type(4n){ 
+    margin-right: 0; 
+} 
+ 
+.time_item{ 
+    width: 168rpx; 
+    height: 88rpx; 
+    margin-right: 11rpx; 
+    margin-bottom: 12rpx; 
+    text-align: center; 
+    line-height: 88rpx; 
+} 
+ 
+.time_item text{ 
+    display: block; 
+    width: 100%; 
+    height: 100%; 
+    border-radius: 6rpx; 
+} 
+
+.canorder{
+    border:1px solid #ff3333; 
+}
+ 
+.noneorder{ 
+    border:1px solid #999; 
+} 
+
+.ordertime{
+    background: #ff3333;
+    color: #fff;
+}
+
+.sure_btn{
+    width: 700rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    font-size: 30rpx;
+    border:none;
+    background: #ff3333;
+    color: #fff;
+}
+

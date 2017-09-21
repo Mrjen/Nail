@@ -1,0 +1,16 @@
+<!--pages/ReserveNailTime/ReserveNailTime.wxml--> 
+<view class="navbar border_bottom"> 
+    <view class="nav_item {{item.active?'item_border':''}}" wx:for="{{dateList}}"> 
+        <text>{{item.text}}</text> 
+        <text>{{item.date}}</text> 
+    </view> 
+</view> 
+ 
+<view class="time_box"> 
+    <view wx:for="{{timeList}}" class="time_item"> 
+        <text class="noneorder" wx:if="{{item.isOrder?false:true}}">{{item.time}}</text> 
+        <text class="canorder {{item.active?'ordertime':''}}" bindtap="orderNial" wx:else="">{{item.time}}</text> 
+    </view> 
+</view> 
+
+<button class="sure_btn">确定</button>

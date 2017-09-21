@@ -1,0 +1,30 @@
+<!--pages/selectStyle/selectStyle.wxml-->
+
+<!-- 轮播 -->
+<swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">
+    <block wx:for="{{imgUrls}}">
+        <swiper-item>
+            <image src="{{item}}" class="slide-image" width="355" height="150" />
+        </swiper-item>
+    </block>
+</swiper>
+
+<!-- 功能区 -->
+<view class="opation_bar flex">
+    <view class="flex" wx:for="{{opationBar}}">
+        <image src="{{item.icon}}"></image>
+        <text>{{item.text}}</text>
+    </view>
+</view>
+
+<!-- 列表 -->
+<view class="list">
+    <view class="list_item" wx:for="{{list}}">
+        <image class="item_img" src="{{item.img}}"></image>
+        <view class="collect_box flex">
+            <image wx:if="{{item.iscollect==0?true:false}}" src="../img/collect_icon.png"></image>
+            <image wx:else="" src="../img/collect_icon_active.png"></image>
+        </view>
+        <view class="item_type">{{item.typeNumber}}</view>
+    </view>
+</view>

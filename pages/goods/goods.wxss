@@ -1,0 +1,116 @@
+/* pages/goods/goods.wxss */
+.search_box{
+    width: 100%;
+    height: 90rpx;
+}
+
+.search_box input{
+    width: 90%;
+    height: 60rpx;
+    background: #eee;
+    border-radius: 40rpx;
+    box-sizing: border-box;
+    padding:0 20rpx;
+}
+
+/* 左侧导航 */
+.container {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.left_bar {
+    width: 172rpx;
+    height: 100%;
+    flex-shrink: 0;
+    background: #efedef;
+    margin-right: 24rpx;
+}
+
+.list_item {
+    height: 70rpx;
+    line-height: 70rpx;
+    text-align: center;
+    background: #efedef;
+    border-top: 1px solid #eee;
+}
+
+.list_item.list_active {
+    background: #fff;
+}
+
+/* 右边列表 */
+.right_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    height: 100%;
+    width: 578rpx;
+    flex: 1;
+}
+
+.scroll_in{
+    width: 554rpx;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-right: 22rpx;
+}
+
+.manager_item {
+    width: 250rpx;
+    margin-bottom: 20rpx;
+}
+
+.manager_item image {
+    width: 250rpx;
+    height: 250rpx;
+    display: block;
+    margin-bottom: 10rpx;
+}
+
+.manager_info {
+    display: flex;
+    justify-content: space-between;
+    padding: 12rpx 0;
+}
+
+.manager_info view:nth-of-type(1) {
+    display: flex;
+    align-items: baseline;
+    font-size: 30rpx;
+    color: #ff5656;
+}
+
+.manager_info view:nth-of-type(1) text {
+    display: inline-block;
+    font-size: 24rpx;
+    color: #8e8e8e;
+    text-decoration: none;
+    text-decoration: line-through;
+}
+
+.manager_info view:nth-of-type(2) {
+    font-size: 26rpx;
+    color: #8e8e8e;
+}
+
+.manager_item .item_title {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    line-height: 40rpx;
+    font-size: 30rpx;
+    color: #333;
+}
+
+.manager_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20rpx;
+}

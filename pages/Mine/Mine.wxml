@@ -1,0 +1,37 @@
+<!--pages/Mine/Mine.wxml-->
+<view class="info">
+    <image src="{{avatarUrl}}"></image>
+    <text>{{nickName}}</text>
+</view>
+
+<!-- 我的订单 -->
+<view class="nav border_bottom">
+    <view class="">我的订单</view>
+    <view>查看全部</view>
+</view>
+<view class="feature">
+    <navigator wx:for="{{featureList}}" url="{{item.url}}?id={{item.id}}">
+        <image src="{{item.icon}}"></image>
+        <text>{{item.text}}</text>
+    </navigator>
+</view>
+
+<!-- 我的拼团 -->
+<view class="nav border_bottom">
+    <view class="">我的拼团</view>
+    <view>查看全部</view>
+</view>
+<view class="feature">
+    <navigator wx:for="{{fightGroup}}" url="{{item.url}}?id={{item.id}}">
+        <image src="{{item.icon}}"></image>
+        <text>{{item.text}}</text>
+    </navigator>
+</view>
+
+<!-- 功能列表 -->
+<view class="nav_list">
+    <navigator wx:for="{{navList}}" url="{{item.url}}">
+        <view>{{item.text}}</view>
+        <view>{{item.tip}}<text wx:if="{{item.tip>0?'':item.text_tip}}">{{item.text_tip}}</text></view>
+    </navigator>
+</view>

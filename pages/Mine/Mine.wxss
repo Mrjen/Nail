@@ -1,0 +1,124 @@
+/* pages/Mine/Mine.wxss */
+.info{
+    display: flex;
+    flex-direction: column;
+    height: 300rpx;
+    width: 100%;
+    background: #f55d5f;
+    align-items: center;
+    padding-top: 20rpx;
+}
+
+.info image{
+    display: block;
+    width: 150rpx;
+    height: 150rpx;
+    border-radius: 50%;
+    margin:20rpx auto;
+    border:10rpx solid rgba(255, 255, 255, .5)
+}
+
+.info text{
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+/* 我的订单 */
+.nav{
+    width: 730rpx;
+    padding:0 10rpx;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.nav view{
+    height: 80rpx;
+    line-height: 80rpx;
+    font-size: 26rpx;
+}
+
+.nav view:nth-of-type(2){
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-right: 28rpx;
+}
+
+.nav view:nth-of-type(2)::before{
+    content: '';
+    display: block;
+    color: #eee;
+    position: absolute;
+    margin-left: 10rpx;
+    right: 1px;
+    width: 10px;
+    height: 10px;
+    border-top: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+}
+
+.feature{
+    display: flex;
+    justify-content: space-between;
+    padding:20rpx 100rpx;
+    border-bottom:20rpx solid #f7f7f7;
+}
+
+.feature navigator{
+    display: flex;
+    flex-direction: column;
+}
+
+.feature navigator image{
+    display: block;
+    width: 80rpx;
+    height: 80rpx;
+    margin:0 auto;
+    margin-bottom: 12rpx;
+}
+
+.feature navigator text{
+    display: block;
+    text-align: center;
+    font-size: 28rpx;
+}
+
+.nav_list navigator{
+    display: flex;
+    justify-content: space-between;
+    padding: 10rpx 20rpx;
+    font-size: 30rpx;
+    height: 70rpx;
+    line-height: 70rpx;
+}
+
+.nav_list navigator view{
+    line-height: 70rpx;
+}
+
+.nav_list navigator view:nth-of-type(2){
+    position: relative;
+    display: flex;
+    padding-right: 10rpx;
+    align-items: center;
+}
+
+.nav_list navigator view:nth-of-type(2)::after{
+    content: '';
+    display: block;
+    color: #eee;
+    margin-left: 10rpx;
+    right: 1px;
+    width: 10px;
+    height: 10px;
+    border-top: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+}

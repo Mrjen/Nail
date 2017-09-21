@@ -1,0 +1,10 @@
+<!--pages/BindMobile/BindMobile.wxml-->
+<view class="mobile_box border_bottom">
+    <input type="number" placeholder="请输入手机号"/>
+    <view class="getcode">
+        <span wx:if="{{selected}}" bindtap="countdown">{{second}}s后重新获取</span>
+        <span wx:else="" bindtap="getphone">获取验证码</span>
+    </view>
+</view>
+<view class="verify_box"><input type="number" placeholder="请输入验证码"/></view>
+<view class="bind_mobile">绑定</view>

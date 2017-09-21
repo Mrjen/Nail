@@ -1,0 +1,64 @@
+<!-- 搜索区域 -->
+<view class="nav flex">
+    <input type="text" placeholder="请输入关键字进行搜索" />
+</view>
+
+<!-- 轮播 -->
+<swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">
+    <block wx:for="{{imgUrls}}">
+        <swiper-item>
+            <image src="{{item}}" class="slide-image" width="355" height="150" />
+        </swiper-item>
+    </block>
+</swiper>
+
+<!-- 功能区 -->
+<view class="opation_bar flex">
+    <view class="flex" wx:for="{{opationBar}}">
+        <image src="{{item.icon}}"></image>
+        <text>{{item.text}}</text>
+    </view>
+</view>
+
+<!-- 火爆拼团 -->
+<view class="box_nav flex">
+    <view>火爆拼团</view>
+    <view class="border">更多</view>
+</view>
+
+<view class="hot_list">
+    <scroll-view scroll-x bindscrolltolower="lower">
+        <view class="scroll_view" style="width:{{hotScrollWidth}}rpx">
+            <view class="hot_item" wx:for="{{hotlist}}">
+                <image src="{{item.img}}"></image>
+                <view class="item_title">
+                    <text>拼团</text>
+                    <view>{{item.title}}</view>
+                </view>
+                <view class="info flex">
+                    <view>￥{{item.price}}</view>
+                    <view>已售{{item.salse}}</view>
+                </view>
+            </view>
+        </view>
+    </scroll-view>
+</view>
+
+<!-- 店长推荐 -->
+<view class="box_nav flex">
+    <view>店长推荐</view>
+    <view class="border">更多</view>
+</view>
+
+<view class="manager_list">
+    <view class="manager_item" wx:for="{{managerList}}">
+        <image src="{{item.img}}"></image>
+        <view class="item_title">{{item.title}}</view>
+        <view class="manager_info">
+            <view>
+                ￥{{item.price}}<text>￥{{item.oldprice}}</text>
+            </view>
+            <view>已售{{item.salse}}</view>
+        </view>
+    </view>
+</view>

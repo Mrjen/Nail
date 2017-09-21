@@ -1,0 +1,74 @@
+/* pages/selectStyle/selectStyle.wxss */
+
+/* 轮播 */
+.swiper {
+    width: 100%;
+    height: 300rpx;
+}
+
+.swiper image {
+    width: 100%;
+    height: 300rpx;
+}
+
+/* 功能区 */
+.opation_bar{
+    padding:30rpx 40rpx;
+    justify-content: space-between;
+    border-top: 20rpx solid #f7f7f7;
+    border-bottom: 20rpx solid #f7f7f7;
+    background: #fff;
+  }
+  
+  .opation_bar view{
+     flex-direction: column;
+  }
+  
+  .opation_bar view image{
+    display: block;
+    width: 60rpx;
+    height: 60rpx;
+    margin-bottom: 20rpx;
+    flex-shrink: 0;
+  }
+  
+  .opation_bar view text{
+    display: block;
+    font-size: 26rpx;
+    text-align: center;
+  }
+
+  /* 列表 */
+
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    padding:0 20rpx;
+}
+
+  .list_item .item_img{
+     display: block;
+     width: 344rpx;
+     height: 344rpx;
+  }
+
+  .collect_box{
+      width: 80rpx;
+      height: 80rpx;
+      background: #fff;
+      border-radius:50%;
+      transform: translateY(-40rpx);
+      margin:0 auto;
+  }
+
+  .collect_box image{
+      display: block;
+      width: 50rpx;
+      height: 50rpx;
+  }
+
+  .list_item .item_type{
+     text-align: center;
+     margin:-30rpx auto 20rpx auto;
+  }

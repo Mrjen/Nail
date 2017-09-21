@@ -1,0 +1,23 @@
+<!--pages/goods/goods.wxml-->
+<view class="search_box flex"><input type="text" placeholder="搜索商品"/></view>
+<view class="container">
+    <!-- 左边导航 -->
+    <view class="left_bar">
+        <view wx:for="{{listbar}}" class="list_item {{item.active?'list_active':''}}">{{item.text}}</view>
+    </view>
+    <!-- 右侧导航 -->
+    <scroll-view scroll-y="true" class="right_container">
+        <view class="scroll_in">
+        <view class="manager_item" wx:for="{{rightList}}">
+            <image src="{{item.img}}"></image>
+            <view class="item_title">{{item.title}}</view>
+            <view class="manager_info">
+                <view>
+                    ￥{{item.price}}<text>￥{{item.oldprice}}</text>
+                </view>
+                <view>已售{{item.salse}}</view>
+            </view>
+        </view>
+    </view>
+    </scroll-view>
+</view>

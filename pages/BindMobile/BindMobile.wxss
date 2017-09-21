@@ -1,0 +1,57 @@
+/* pages/BindMobile/BindMobile.wxss */
+page{
+    background: #f7f7f7;
+}
+
+.mobile_box{
+    display: flex;
+    height: 80rpx;
+    background: #fff;
+    position: relative;
+}
+
+.mobile_box input{
+    display: flex;
+    flex: 1;
+    line-height: 80rpx;
+    height: 80rpx;
+    box-sizing: border-box;
+    padding-left: 20rpx;
+}
+
+.mobile_box .getcode{
+    width: 200rpx;
+    line-height: 80rpx;
+    font-size: 26rpx;
+    text-align: center;
+    color: #ff3333;
+}
+
+.verify_box{
+    width: 100%;
+    height: 80rpx;
+    background:#fff;
+    line-height: 80rpx;
+}
+
+.verify_box input{
+    width: 100%;
+    height: 80rpx;
+    line-height: 80rpx;
+    box-sizing: border-box;
+    padding-left: 20rpx;
+    font-size: 30rpx;
+}
+
+.bind_mobile{
+    width: 700rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    text-align: center;
+    line-height: 80rpx;
+    color: #fff;
+    background: #ff3333;
+    border-radius: 5rpx;
+    margin:50rpx auto;
+    font-size: 30rpx;
+}
