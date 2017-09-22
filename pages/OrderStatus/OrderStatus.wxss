@@ -1,0 +1,84 @@
+/* pages/OrderStatus/OrderStatus.wxss */
+page{
+	background: #f7f7f7;
+}
+
+.order_left{
+	display: flex;
+}
+
+.order_left image{
+	 width: 120rpx;
+	 height: 120rpx;
+	 display: block;
+	 margin-right: 20rpx;
+	 flex-shrink: 0;
+}
+
+.order_left .order_info view:nth-of-type(1){
+    font-size: 30rpx;
+    margin-bottom:10rpx;
+    line-height: 40rpx;
+}
+
+.order{
+	display: flex;
+	padding:0 20rpx;
+	position: relative;
+	padding-bottom: 20rpx;
+	background: #fff;
+}
+
+.order_right{
+	display: flex;
+	align-items: flex-end;
+}
+
+.pay_money{
+	text-align: right;
+	height: 80rpx;
+	line-height: 80rpx;
+	background: #fff;
+	padding:0 20rpx;
+	font-size: 30rpx;
+}
+
+.pay_money text{
+	color: #ff3333;
+}
+
+/*底部导航*/
+.bottom_nav{
+	display: flex;
+	justify-content: space-between;
+	height: 100rpx;
+	background: #fff;
+	align-items: center;
+	padding:0 20rpx;
+	position: fixed;
+	left: 0;
+	bottom: 0; 
+	width: 100%;
+}
+
+.bottom_nav .nav_left text{
+    color: #ff3333;
+}
+
+.nav_right view{
+	display: inline-block;
+	padding:10rpx 20rpx;
+	font-size: 28rpx;
+	border-radius: 4rpx;
+}
+
+.nav_right view:nth-of-type(1){
+    border:1px solid #eee;
+    text-align: center;
+}
+
+.nav_right view:nth-of-type(2){
+	color: #fff;
+	background: #ff3333;
+	margin-left: 20rpx;
+}

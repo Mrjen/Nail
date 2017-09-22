@@ -1,5 +1,8 @@
 {
   "pages":[
+    "pages/goods/goods",
+    "pages/index/index",
+    "pages/coupon/coupon",
     "pages/NailTeachList/NailTeachList",
     "pages/ReserveNailTime/ReserveNailTime",
     "pages/SubmitOrder/SubmitOrder",
@@ -8,10 +11,8 @@
     "pages/Detile/Detile",
     "pages/Mine/Mine",
     "pages/selectStyle/selectStyle",
-    "pages/index/index",
     "pages/fightGroup/fightGroup",
-    "pages/myOrder/myOrder",
-    "pages/goods/goods"
+    "pages/myOrder/myOrder"
   ],
   "window":{
     "backgroundTextStyle":"light",

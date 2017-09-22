@@ -1,2 +1,9 @@
 <!--pages/ReserveNail/ReserveNail.wxml-->
-<view>pages/ReserveNail/ReserveNail.wxml</view>
+<view class="order_list">
+    <navigator class="border_bottom" url="../ReserveNailTime/ReserveNailTime"><text>时间</text><text></text></navigator>
+    <navigator class="border_bottom" url="../BindMobile/BindMobile"><text>手机</text><text></text></navigator>
+    <navigator class="border_bottom" url="../NailTeachList/NailTeachList"><text>美甲师</text><text></text></navigator>
+    <navigator class="border_bottom"><text>备注</text><text></text></navigator>
+</view>
+
+<button  class="sure_order">免费预约</button>

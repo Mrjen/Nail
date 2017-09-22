@@ -1,0 +1,21 @@
+<!--pages/OrderStatus/OrderStatus.wxml-->
+<view class="order border_bottom">
+	<view class="order_left">
+         <image src="{{orderInfo.img}}"></image>
+         <view class="order_info">
+            <view>{{orderInfo.title}}</view>
+            <view>￥{{orderInfo.price}}</view>
+         </view>
+	</view>
+    <view class="order_right">x{{orderInfo.orderNum}}</view>
+</view>
+<view class="pay_money">应付金额：<text>￥{{money}}</text></view>
+
+<!-- 底部导航 -->
+<view class="bottom_nav border_top">
+    <view class="nav_left">支付剩余时间：<text>05:40</text></view>
+    <view class="nav_right">
+       <view>取消订单</view>
+       <view>去支付</view>
+    </view>
+</view>

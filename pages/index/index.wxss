@@ -27,7 +27,7 @@
 
 /* 功能区 */
 .opation_bar{
-  padding:30rpx 40rpx;
+  padding:30rpx 60rpx;
   justify-content: space-between;
   border-top: 20rpx solid #f7f7f7;
   border-bottom: 20rpx solid #f7f7f7;
@@ -40,8 +40,8 @@
 
 .opation_bar view image{
   display: block;
-  width: 60rpx;
-  height: 60rpx;
+  width: 80rpx;
+  height: 80rpx;
   margin-bottom: 20rpx;
   flex-shrink: 0;
 }
@@ -65,7 +65,19 @@
   padding-left: 10rpx;
 }
 
+.box_nav navigator{
+  display: block;
+  padding-left: 10rpx;
+  position: relative;
+  width: 80rpx;
+  height: 40rpx;
+  font-size: 24rpx;
+  line-height: 40rpx;
+  text-align: center;
+}
+
 .box_nav view:nth-of-type(2){
+  display: block;
   padding-left: 10rpx;
   position: relative;
   width: 80rpx;
@@ -77,6 +89,8 @@
 
 .hot_list{
   display: flex;
+  justify-content: space-between;
+  padding:0 20rpx;
 }
 
 .hot_list scroll-view{
@@ -87,14 +101,13 @@
 }
 
 .hot_item{
-  width: 250rpx;
-  margin-left: 20rpx;
+  width: 228rpx;
 }
 
 .hot_item image{
   display: block;
-  width: 250rpx;
-  height: 250rpx;
+  width: 228rpx;
+  height: 228rpx;
   margin-bottom: 10rpx;
 }
 

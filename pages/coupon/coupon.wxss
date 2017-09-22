@@ -1,0 +1,139 @@
+/* pages/coupon/coupon.wxss */
+
+page {
+    background: #333;
+}
+
+.coupon_item {
+    width: 714rpx;
+    height: 180rpx;
+    background: #fff;
+    margin: 10rpx auto;
+    display: flex;
+    justify-content: space-between;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAsoAAAC0CAMAAAC6//rqAAAAWlBMVEX///8AAAD////////////////////////////////////////////////////////////////////////////////6+vqXl5fa2tr29vbr6+vg4ODU1NSwsLDwCQUnAAAAFXRSTlOIADx6CMIk9+WocWJT8NqPGhCYRrYJEdzjAAAD7ElEQVR42uzZSXICMRAFUYmeoJnM8G3j4f7X9IYFNhXdZkOUSvmOoEiVpFDqk3tNNo0JXqyz5ZCeqE8L+ZdNS8GLLlt6PdGiiJT7bGgFN5bZctKUKlMes2Ej+NFnQ9KUKlPusmEl+NFkw05TqkzZ2vMvg+DHsn343Kwz5Y6h7N39WG53mlRnyvcLtRZ8OT06bCpN+e/Lb8P1wpvtIv+y14xaU9bxcHN0JcGdYWxvnjJnzak2ZW3Ha8ztms8Rn3ab9hpyGjSr3pSlods3zf7M3cKv7So1zbHTf9ScMkDKCI+UEQQpIwhSRhCkjCAKS/nyJcBQXMrvb68C7pEywiBlBEHKCIKUEQQpIwhSRhCkjCAKS/mTlGEqLmVdBBjKSxkgZcRGygiClBEEKSMIUkYQhaX88S3AUFzK/PbBRsoIg5QRBCkjCFJGEKSMIEgZP+zdQQ0AMAzDQP6sS6AEYt1h8GuVsggpEzGWshMJv7mUQcrESZkIKRMhZSKkTMRaysYDeM2lbNKF31zKrn38pEyGlImQMhFSJkLKREiZCCkTMZayj4H5zaUMUiZOykRImQgpEyFlIsZS9hjHby5lJxJ+UiZDykRImQgpEyFlIqRMhJSJGEvZpAu/uZQNbfHbSxmkTJuUiZAyEVImQspEjKV87N1BThtREEXRWG3LiRLigNL73yoSA0YlwZC6nLOGO/pPqu8LSmbrUrb2MZMyGVImQspESJkIKRMhZSKkTMSylE0kzNalDFImTspESJkIKRMhZSK2pex4AKN1KTvpwmxdytY+ZlImQ8pESJkIKRMhZSKkTISUiViWso+Bma1LGaRMnJSJkDIRUiZCykQsS9ljHLN1KZtImEmZDCkTIWUipEyElImQMhFSJmJZyk66MFuXskNbzPalDFKmTcpESJkIKRMhZSKWpewLSmbrUrb2MZMyGVImQspESJkIKRMhZSKkTMSylE0kzNalDFImTspESJkIKRMhZSK2pex4AKN1KTvpwmxdytY+ZlImQ8pESJkIKRMhZSKkTISUiViWso+Bma1LGaRMnJSJkDIRUiZCykSsSvl+ezmOx+1+8lU9/X8cx8vt/Izvm/LT8Xx5c/398+Qr+vvnennz78f9/NC3TfnX8+Xd9XHy2p6dpDAMxEAU7aIHPMU4aer+V83OJG4h74xAemf4aKGyZyk4HZV3vKac8WdlMObV8at8eMNpyhmIlm3ruJip85lyxWBmsCThquzUuUy5YXDEI8OSqWCwUeUy5QrEWbYtQ7BT4zLlBYKNwY4GQaLGZcoNgsJgxgRJp8ZlygWSGErsqJA0PuFMuSXzMkRLClaskLzTg9oX2/VrBMaIoE8AAAAASUVORK5CYII=');
+    background-size: 100% 100%;
+}
+
+.coupon_item .cards_left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding-left: 20rpx;
+}
+
+.coupon_item .cards_left image {
+    width: 130rpx;
+    height: 130rpx;
+    border-radius: 50%;
+}
+
+.coupon_item .cards_left .content {
+    flex: 1;
+    height: 180rpx;
+    padding-left: 40rpx;
+    padding-top: 30rpx;
+}
+
+.coupon_item .cards_right {
+    width: 122rpx;
+    height: 180rpx;
+    background: #ff5c5c;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK0AAAECBAMAAAB+vEr/AAAAJ1BMVEUAAAD/XFz/XFz/XFz/XFz/XFz/XFz/XFz/XFz/XFz/XFz/XFz/XFy/CmNcAAAADHRSTlMADAUvrHrq9dtkFc2g8JNFAAABTUlEQVR42u3cMUrDYBzG4dbSQWcRHBUEB1fBwSP0CB7BI+QIjo5uLg49goMH+A4lDSSasdAX8g9PlmR6htLv4ze9q+F5aKd8fkZ3H3KfQ+5HyN1l3HWXcc9bxr0PuS8Zd9Nl3K8WcS++M+5Ti7h3XcS9fmund28/37sWcPsXl8udnrfH18NH4H64bC3irnYh9yrkbkPuJuSehdz14avQ77DtP+v8z4ZzUeIc30zunfnfk/2Ly+XqB/2gH/SDfuByufph3ve6ftAP+kE/cLmLc/WDftAP+kE/cLlc/TC7e10/6Af9oB+43MW5+kE/6Af9oB+4XK5+mN29rh/0g37QD1zu4lz9oB/0g37QD1wuVz/M7l7XD/pBP+gHLpd7/A5cid26yc5ekV3Accewyu7isBNZZtdy3OGsshv6t3NaY5f1/45sid3bfcAN7Ar/Arsax+b+GLlPAAAAAElFTkSuQmCC');
+    background-size: 100% 100%;
+}
+
+.coupon_item .cards_left .content .discount,
+.coupon_item .cards_left .content .reduced {
+    width: 100%;
+    height: 100%;
+}
+
+.coupon_item .cards_left .discount .content_top {
+    display: flex;
+}
+
+.coupon_item .cards_left .discount .dis_icon {
+    width: 40rpx;
+    display: flex;
+    align-items: flex-start;
+    color: #ff3333;
+}
+
+.coupon_item .cards_left .discount .dis_num {
+    font-size: 70rpx;
+    color: #ff3333;
+    margin-right: 10rpx;
+}
+
+.coupon_item .content_right {
+    flex: 1;
+}
+
+.coupon_item .content_right view {
+    font-size: 28rpx;
+    line-height: 40rpx;
+    color: #333;
+}
+
+.coupon_item .cards_left .content_bottom{
+	position: relative;
+	display: flex;
+	align-items: center;
+	font-size: 24rpx;
+	padding-top: 20rpx;
+}
+
+.coupon_item .content_bottom .clock{
+	color: #999;
+	display: inline-block;
+    width: 25rpx;
+    height: 25rpx;
+    position: relative;
+    border: solid 1px currentColor;
+    border-radius: 8px;
+    margin-right: 15rpx;
+}
+
+.clock:before{
+  content: '';
+  position: absolute;
+  top: 12rpx;
+  left: 11rpx;
+  width: 10rpx;
+  height: 1px;
+  background-color: currentColor;
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+}
+
+.clock:after{
+	content: '';
+  position: absolute;
+  top: 4rpx;
+  left: 10rpx;
+  width: 1px;
+  height: 10rpx;
+  background-color: currentColor;
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+}
+
+.cards_right{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.cards_right text{
+   display: block;
+   font-size: 30rpx;
+   width: 30rpx;
+   color: #fff;
+}
+
+.reduced .reduced_title{
+	color: #ff3333;
+	font-size: 32rpx;
+	margin-bottom: 12rpx;
+}

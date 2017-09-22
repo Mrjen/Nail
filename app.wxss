@@ -4,6 +4,7 @@ view{
   line-height: 1;
   font-size: 30rpx;
   color: #333;
+  font-family: Helvetica, Arial, "PingFang SC","Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
 }
 
 .border_top::before{

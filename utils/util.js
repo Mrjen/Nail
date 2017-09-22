@@ -1,21 +1,27 @@
-function formatTime(date) {
-  var year = date.getFullYear()
-  var month = date.getMonth() + 1
-  var day = date.getDate()
+var app = getApp();
+function ajax(apiData,cb) {
+    let sign = wx.getStorageSync("sign");
+    wx.request({
+        url: `${app.data.apiUrl}${apiData.apiWords}?sign=${sign}&operator_id=${app.data.kid}&${apiData.str}`,
+        data:apiData.data,
+        method: apiData.method ? method : 'get',
+        header: apiData.header ? header : { "Content-Type": "application/json" },
+        success: function(res) {
+          console.log(res);
+          typeof cb == 'function' && cb(res);
+        },
+        fali(res){
+           console.log(res)
+        }
+    });
+};
 
-  var hour = date.getHours()
-  var minute = date.getMinutes()
-  var second = date.getSeconds()
 
+// goods
+const GetCategorys = (apiData) => ajax(apiData,apiUrl+'get-categorys?type=0');
 
-  return [year, month, day].map(formatNumber).join('/') + ' ' + [hour, minute, second].map(formatNumber).join(':')
-}
-
-function formatNumber(n) {
-  n = n.toString()
-  return n[1] ? n : '0' + n
-}
 
 module.exports = {
-  formatTime: formatTime
+  ajax,
+  GetCategorys
 }

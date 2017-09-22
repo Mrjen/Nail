@@ -1,0 +1,27 @@
+<!--pages/coupon/coupon.wxml-->
+<view class="container">
+    <view class="coupon_item" wx:for="{{cardsList}}">
+       <view class="cards_left">
+           <image src="{{item.logo}}"></image>
+           <view class="content">
+               <view class="discount" wx:if="{{item.type?true:false}}">
+                   <view class="content_top">
+                       <view class="dis_icon">折</view>
+                       <view class="dis_num">8.5</view>
+                       <view class="content_right">
+                          <view>靓丽美甲</view>
+                          <view>满500可用</view>
+                       </view>
+                   </view>
+                   <view class="content_bottom"><text class="clock"></text>有效期至:2017-11-22 17:13:00</view>
+               </view>
+               <view class="reduced" wx:if="{{item.type?false:true}}">
+                   <view class="reduced_title">美甲服务</view>
+                   <view class="reduced_content">靓丽美甲 满1000可用</view>
+                   <view class="content_bottom"><text class="clock"></text>有效期至:2017-11-22 17:13:00</view>
+               </view>
+           </view>
+       </view>
+       <view class="cards_right"><text>立即领取</text></view>
+    </view>
+</view>

@@ -1,1 +1,51 @@
 /* pages/NailTeachList/NailTeachList.wxss */
+.list_item{
+    display: flex;
+    justify-content: space-between;
+    padding:20rpx;
+    position: relative;
+    height: 160rpx;
+}
+
+.item_left{
+    display: flex;
+}
+
+.item_left image{
+    display: block;
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+    margin-right: 20rpx;
+}
+
+.item_left .info view:nth-of-type(1){
+    font-size: 30rpx;
+    color: #333;
+    margin-bottom: 10rpx;
+}
+
+.item_left .info view:nth-of-type(2){
+    font-size: 28rpx;
+    color: #666;
+    margin-bottom: 10rpx;
+}
+
+.item_left .info view:nth-of-type(3){
+    font-size: 28rpx;
+    color: #999;
+}
+
+.item_left .info view:nth-of-type(3) text{
+    color: #ff3333;
+}
+
+.item_right{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.item_right radio{
+    display: block;
+}

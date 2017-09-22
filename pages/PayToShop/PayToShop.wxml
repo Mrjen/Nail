@@ -1,0 +1,7 @@
+<!--pages/PayToShop/PayToShop.wxml-->
+<view class="pay_num">
+   <input type="number" placeholder="输入金额"/>元
+</view>
+<text class="tip">选择支付方式</text>
+<view class="pay_type"><radio value="{{item.name}}" color="#ff3333" checked="checked"/>微信支付</view>
+<button class="pay_money">确认</button>

@@ -1,1 +1,18 @@
 /* pages/ReserveNail/ReserveNail.wxss */
+.order_list navigator{
+    display: flex;
+    height: 80rpx;
+    line-height: 80rpx;
+    justify-content: space-between;
+    padding:0 20rpx;
+    position: relative;
+}
+
+.sure_order{
+    width: 700rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    color: #fff;
+    background: #ff3333;
+    margin:50rpx auto;
+}

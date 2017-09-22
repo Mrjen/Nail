@@ -3,19 +3,19 @@
 <view class="container">
     <!-- 左边导航 -->
     <view class="left_bar">
-        <view wx:for="{{listbar}}" class="list_item {{item.active?'list_active':''}}">{{item.text}}</view>
+        <view wx:for="{{listbar}}" class="list_item {{item.active?'list_active':''}}" data-id="{{item.cate_id}}" data-index="{{index}}" bindtap="changeNav">{{item.cate_name}}</view>
     </view>
     <!-- 右侧导航 -->
     <scroll-view scroll-y="true" class="right_container">
         <view class="scroll_in">
-        <view class="manager_item" wx:for="{{rightList}}">
-            <image src="{{item.img}}"></image>
+        <view class="manager_item" wx:for="{{rightList}}" bindtap="toDetail" data-gid="{{item.gid}}">
+            <image src="{{item.picture}}"></image>
             <view class="item_title">{{item.title}}</view>
             <view class="manager_info">
                 <view>
-                    ￥{{item.price}}<text>￥{{item.oldprice}}</text>
+                    ￥{{item.price}}<text>￥{{item.market_price}}</text>
                 </view>
-                <view>已售{{item.salse}}</view>
+                <view>已售{{item.sales_volume}}</view>
             </view>
         </view>
     </view>
