@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/selectStyle/selectStyle",
     "pages/goods/goods",
     "pages/index/index",
     "pages/coupon/coupon",
@@ -10,7 +11,7 @@
     "pages/BindMobile/BindMobile",
     "pages/Detile/Detile",
     "pages/Mine/Mine",
-    "pages/selectStyle/selectStyle",
+    
     "pages/fightGroup/fightGroup",
     "pages/myOrder/myOrder"
   ],

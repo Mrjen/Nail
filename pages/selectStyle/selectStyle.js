@@ -1,4 +1,6 @@
 // pages/selectStyle/selectStyle.js
+var util = require('../../utils/util.js');
+var app = getApp();
 Page({
   data: {
     imgUrls: [
@@ -56,7 +58,14 @@ Page({
   },
 
   onShow: function () {
-  
+     let that = this;
+     let apiData = {
+        str:"cate_id=0",
+        apiWords:"style-list"
+      }
+     util.ajax(apiData,function(res){
+       console.log(res)
+     })
   },
 
   onHide: function () {
